@@ -61,12 +61,12 @@ public class RtlToolbar extends Toolbar {
         }
 
         // rotates searchView back button
-        if (child.getContentDescription() != null && child.getContentDescription().equals("Collapse")) {
+        if (child.getContentDescription() != null && child.getContentDescription().equals(getContext().getString(android.support.v7.appcompat.R.string.abc_toolbar_collapse_description))) {
             child.setRotationY(0);
         }
 
         // rotates home button
-        if (child.getContentDescription() != null && child.getContentDescription().equals("Navigate up")) {
+        if (child.getContentDescription() != null && child.getContentDescription().equals(getNavigationContentDescription())) {
             child.setRotationY(0);
         }
 
